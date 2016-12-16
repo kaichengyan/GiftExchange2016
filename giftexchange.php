@@ -23,7 +23,7 @@
 
         <?php
         include("./dbinfo.php");
-        $conn = mysqli_connect($db_server, $db_username, $db_password, "gift-exchange-2016");
+        $conn = mysqli_connect($db_server, $db_username, $db_password, $db_name);
         if (mysqli_connect_errno()) {
             echo "MySQLi Connection was not established: " . mysqli_connect_error();
         }
